@@ -1,0 +1,85 @@
+#input-form {
+	max-width: 85%;
+}
+
+#error {
+	display: none;
+	text-shadow: none;
+
+}
+
+#image {
+	width: 75px;
+	/*margin-left: 15px*/;
+
+}
+
+#output {
+	display: none;
+	background-color: transparent;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* #headerLoad {
+ 	text-align: center;
+ 	margin: 0 auto;
+ }*/
+
+ #zipinput, #weatherButton {
+ 	/*width: 40%;*/
+ 	/*margin: 0 auto 10px;*/
+ 	background-color: transparent;
+ 	color: #050166;
+ 	border-color: #050166;
+
+ }
+
+ #logo {
+	max-width: 15%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	animation: bounceIn 1s;
+  	transform: rotate(0deg) scale(1) translateZ(0);
+  	transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  	cursor: pointer;
+  	-webkit-filter: drop-shadow(3px 3px 3px #222);
+  	filter: drop-shadow(1px 1px 1px #222);
+}
+
+#tempText {
+	font-size: 20px;
+}
+
+#cityText {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+#tempButtons {
+	padding-bottom: 40px;
+}
+
+#weatherConditions {
+	font-size: 24px;
+}
+
+
+.fluid-container, html { 
+	background: url(blue-bg.jpg) no-repeat center center fixed; 
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.1em;
+}
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(blue-bg.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/*panel {
+	background-color: transparent;
+}*/
+
+

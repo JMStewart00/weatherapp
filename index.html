@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather App</title>
+
+		<style> @import url('https://fonts.googleapis.com/css?family=Oswald'); </style>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<div class="fluid-container">
+			<img src="storm.png" class="center-block" id="logo">
+			<p class='text-center'>Enter your zipcode below to get current weather conditions for your area!</p>
+			<div class="row text-center">
+				<div class="col-xs-6 text-center col-xs-push-3">
+					<div class="input-group">
+						<!-- <form role='form' id="submitZip"> -->
+						<input type="text" id="zipinput" class="form-control input-lg text-center" name="zipcode" placeholder="Enter Zipcode...">
+						<span class="input-group-btn">
+							<button class="btn btn-primary btn-lg" type="button" id="weatherButton">Go!</button>
+						</span>
+						<!-- <p><input type="button" id="weatherButton" class="btn btn-primary btn-lg" value="Get Weather"></p> -->
+					</div>
+				</div>
+
+<!-- <div class="col-lg-6">
+	<div class="input-group">
+		<input type="text" class="form-control input-lg text-center" placeholder="Enter Zipcode..." name="zipcode">
+		<span class="input-group-btn">
+			<button class="btn btn-default btn-lg" type="button" id="weatherButton">Go!</button>
+		</span> -->
+
+			</div>
+			<br>
+			<div class="row text-center" id="output">
+				<h3 class="text-center col-xs-12" id="cityText"></h3>
+					<div class="row text-center" id="tempText">
+
+						<div class="col-xs-4 col-xs-offset-4">
+							<div class="row">
+								<div class="col-xs-6 text-center panel-body"><img src='' id='image'></div>
+								<div class="col-xs-6 text-center"><img src="thermometer.png"><div id="defaultTemp"></div></div>
+							</div>
+						</div>
+					</div>
+
+						<!-- <div class="col-xs-5" id="fahr"></div> -->
+
+					<div class="col-xs-6 text-center panel-body col-xs-offset-3" id="weatherConditions"></div>
+				<div class="row clearfix">
+					<div class="col-xs-12" id="tempButtons">
+						<button type="button" class="btn btn-default" id="celsius">&#176 C</button>
+						<button type="button" class="btn btn-default" id="fahr">&#176 F</button>
+						<button type="button" class="btn btn-default" id="kelvin">&#176 K</button>
+					</div>
+				</div>
+
+			
+				<div id="error" class="alert alert-danger text-center" role="alert">
+				Please enter a valid zipcode.
+				</div>
+			</div>
+	</div> <!-- container -->
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -21,7 +21,7 @@ document.onreadystatechange = function () {
 
 
 function getWeather() {
-	var url = "http://api.openweathermap.org/data/2.5/weather?zip=<zipCode>&us&appid=58e92c763df5499a2c9ae20da806e2dc";
+	var url = "http://api.openweathermap.org/data/2.5/weather?zip=<zipCode>&us&appid=abbc51c271215f5849f822fa464410c7";
 	  url = url.replace("<zipCode>",zipinput.value );
 	  console.log(url);
 	  apiRequest = new XMLHttpRequest();
@@ -40,7 +40,7 @@ function catchResponse () {
 	} else {
 		httpRequestOnError();
 	}
-	
+
 };
 
 function httpRequestOnError() {
@@ -67,14 +67,14 @@ function parseResults(results) {
     	kelvin = Math.round(results.main.temp) + 'K';
     	weatherConditions.innerHTML = `<p>${results.weather[0].description.toUpperCase()}</p>`;
    		icon.src = iconUrl;
-   	 
 
-	} 
+
+	}
 	else {
 		console.log("This was a bad request")};
 };
 
-// Temperature button clicking options // 
+// Temperature button clicking options //
 celsius.onclick = function celsiusClick() {
 		defaultTemp.innerHTML = Math.round(JSON.parse(apiRequest.response).main.temp-273.15) + '&#176 C';
 };
